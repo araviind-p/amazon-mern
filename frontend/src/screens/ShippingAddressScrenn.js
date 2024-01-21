@@ -17,18 +17,18 @@ export default function ShippingAddressScrenn() {
     const [address, setAddress] = useState(shippingAddress.address || '');
     const [city, setCity] = useState(shippingAddress.city || '');
     const [postalCode, setPostalCode] = useState(shippingAddress.postalCode || '');
-    
-    useEffect(()=>{
-        if(!userInfo){
-            navigate('/signin?redirect=/shipping')
+
+    useEffect(() => {
+        if (!userInfo) {
+            navigate('/signin?redirect=/shipping');
         }
-    }, [userInfo, navigate])
+    }, [userInfo, navigate]);
 
     const [country, setCountry] = useState(shippingAddress.country || '');
     const submitHandler = (e) => {
         e.preventDefault();
         ctxDispatch({
-            type: 'SAVE_SHIPPIN_ADDRESS',
+            type: 'SAVE_SHIPPING_ADDRESS',
             payload: {
                 fullName,
                 address,
