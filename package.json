@@ -1,0 +1,17 @@
+{
+  "name": "amazon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-backend": "cd backend && npm install",
+    "start-backend": "cd backend && node server.js",
+    "install-frontend": "cd frontend && npm install",
+    "build-frontend": "cd frontend && npm run build",
+    "start-frontend": "cd frontend && npm run start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
